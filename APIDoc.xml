@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynamicDbContextWeb</name>
+    </assembly>
+    <members>
+        <member name="T:DynamicDbContextWeb.Extensions.SwaggerAddEnumDescriptions">
+            <summary>
+            Filtro para que salgan las descripciones de los enumerados
+            </summary>
+            <seealso cref="T:Swashbuckle.AspNetCore.SwaggerGen.IDocumentFilter" />
+        </member>
+        <member name="M:DynamicDbContextWeb.Extensions.SwaggerAddEnumDescriptions.Apply(Microsoft.OpenApi.Models.OpenApiDocument,Swashbuckle.AspNetCore.SwaggerGen.DocumentFilterContext)">
+            <summary>
+            Genera comentarios extendidos para los enumerados
+            </summary>
+            <param name="swaggerDoc">The swagger document.</param>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:DynamicDbContextWeb.Extensions.SwaggerAddEnumDescriptions.GenerateEnumParameters(System.Collections.Generic.IDictionary{Microsoft.OpenApi.Models.OperationType,Microsoft.OpenApi.Models.OpenApiOperation},Microsoft.OpenApi.Models.OpenApiDocument)">
+            <summary>
+            Generates the enum parameters.
+            </summary>
+            <param name="operations">The operations.</param>
+            <param name="swaggerDoc">The swagger document.</param>
+        </member>
+        <member name="M:DynamicDbContextWeb.Extensions.SwaggerAddEnumDescriptions.GenerateEnumDescriptions(System.Collections.Generic.IList{Microsoft.OpenApi.Any.IOpenApiAny},System.String)">
+            <summary>
+            Generates the enum descriptions.
+            </summary>
+            <param name="enums">The enums.</param>
+            <param name="propretyTypeName">Name of the proprety type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:DynamicDbContextWeb.Extensions.ServiceCollectionExtensions.AddSwaggerCustom(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the swagger.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+    </members>
+</doc>
