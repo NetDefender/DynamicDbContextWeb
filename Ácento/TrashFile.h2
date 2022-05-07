@@ -1,6 +1,0 @@
-Ejemplo de uso en Jenkins
-
-withCredentials([usernamePassword(credentialsId: 'GithubToken', passwordVariable: 'PASSWORD', usernameVariable: 'USERNAME')]) {
-
-	bat('git push https://${PASSWORD}@github.com/${USERNAME}/DynamicDbContextWeb')
-}
